@@ -32,7 +32,7 @@ M84 S30                                        ; Set idle timeout
 
 ; Axis Limits
 M208 X0 Y-4 Z0 S1                              ; set axis minima
-M208 X250 Y210 Z210 S0                         ; set axis maxima
+M208 X250 Y210 Z220 S0                         ; set axis maxima
 
 
 ; Endstops
@@ -65,7 +65,7 @@ M307 H1 A540.1 C214.5 D4.9 V0.0 B0
 ;M305 S"Chamber temp" P103 T100000 B4138 C0 R2200 X1 ; Case temp 100k semtek on E0 thermistor input.
 
 ; Filament sensor
-; M591 D0 P2 C"e0stop" S1                        ; activate Prusa filament sensor
+M591 D0 P2 C"e0stop" S0                        ; enable Prusa filament sensor with "S1"
 
 ; Fans
 M950 F0 C"fan0" Q500                           ; create fan 0 on pin fan0 and set its frequency
