@@ -18,10 +18,10 @@ M550 P"duet3"             ; set printer name
 M569 P0 S1 D3 V40                              ; physical drive 0 goes forwards using default driver timings
 M569 P1 S1 D3 V40                              ; physical drive 1 goes forwards using default driver timings
 M569 P2 S1 D3 V40                              ; physical drive 2 goes forwards using default driver timings
-M569 P3 S0									   ; physical drive 3 goes forwards using default driver timings
+M569 P3 S0									                   ; physical drive 3 goes backwards using default driver timings
 M569 P4 S1 D3 V40                              ; physical drive 4 goes forwards using default driver timings
 M584 X0 Y1 Z4:2 E3                             ; set drive mapping
-M671 X-36:300 Y0:0 S1   					   ; set leadscrews potions (for z levelling)
+M671 X-36:300 Y0:0 S1   					             ; set leadscrews potions (for z levelling)
 M350 X16 Y16 Z16 E16 I1                        ; configure microstepping with interpolation
 M92 X100.00 Y100.00 Z400.00 E415.00            ; set steps per mm
 M566 X900.00 Y900.00 Z12.00 E120.00            ; set maximum instantaneous speed changes (mm/min)
